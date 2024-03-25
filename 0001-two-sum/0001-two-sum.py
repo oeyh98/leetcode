@@ -3,10 +3,10 @@ class Solution:
         dic = {}
         
         for i, num in enumerate(nums):
-            dic[num] = i
             
-        for i, num in enumerate(nums):
             complement = target - num
             
-            if complement in dic and i != dic[complement]:
+            if complement in dic:
                 return i, dic[complement]
+            
+            dic[num] = i
