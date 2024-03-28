@@ -2,20 +2,14 @@ class MyQueue:
 
     def __init__(self):
         self.q = []
-
     def push(self, x: int) -> None:
         self.q.append(x)
-
     def pop(self) -> int:
-        output = self.q.pop(0)
-        return output
+        return self.q.pop(0)
     def peek(self) -> int:
-        output = self.q[0]
-        return output
+        return self.q[0]
     def empty(self) -> bool:
-        if len(self.q) == 0:
-            return True
-        return False
+        return True if len(self.q) == 0 else False
 
 
 # Your MyQueue object will be instantiated and called as such:
